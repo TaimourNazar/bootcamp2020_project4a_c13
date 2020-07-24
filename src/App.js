@@ -26,7 +26,7 @@ function App() {
   });
 
   return (
-    <div onClick={() => animate.getAnimation().updatePlaybackRate(animate.getAnimation().playbackRate * 1.2)}>
+    <div>
       <div className="wrapper">  
         <div className="rocket">
             <img src={rocket} alt="rocket" id="character"/>
@@ -44,6 +44,8 @@ function App() {
             <img src={p10} alt="planet10" id="planet10"/>
             <img src={p11} alt="planet11" id="planet11"/>
         </div>
+      <button onClick={() => animate.getAnimation().updatePlaybackRate(animate.getAnimation().playbackRate * 1.2)}>Speed Up</button>
+      <button onClick={() => animate.getAnimation().updatePlaybackRate(animate.getAnimation().playbackRate * 0.7)}>Speed Down</button>
       </div>
     </div>
   );
